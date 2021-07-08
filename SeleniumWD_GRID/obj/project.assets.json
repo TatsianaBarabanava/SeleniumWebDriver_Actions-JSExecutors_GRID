@@ -1,0 +1,569 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "NUnit/3.13.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "NUnit.ConsoleRunner/3.12.0": {
+        "type": "package"
+      },
+      "NUnit3TestAdapter/4.0.0": {
+        "type": "package",
+        "build": {
+          "build/net35/NUnit3TestAdapter.props": {}
+        }
+      },
+      "Selenium.Support/3.141.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "3.141.0"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing"
+        ],
+        "compile": {
+          "lib/net45/WebDriver.Support.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WebDriver.Support.dll": {}
+        }
+      },
+      "Selenium.WebDriver/3.141.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing"
+        ],
+        "compile": {
+          "lib/net45/WebDriver.dll": {}
+        },
+        "runtime": {
+          "lib/net45/WebDriver.dll": {}
+        }
+      },
+      "Selenium.WebDriver.ChromeDriver/91.0.4472.10100": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
+      "Selenium.WebDriver.GeckoDriver.Win64/0.29.1": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.GeckoDriver.Win64.targets": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "5.0.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Configuration",
+          "System.Drawing",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Configuration.ConfigurationManager.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Configuration.ConfigurationManager.dll": {}
+        }
+      },
+      "System.Security.AccessControl/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.AccessControl.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.AccessControl.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net461/System.Security.AccessControl.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Permissions/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.AccessControl": "5.0.0"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.Configuration",
+          "System.Data",
+          "System.Data.OracleClient",
+          "System.Drawing",
+          "System.Net",
+          "System.Security",
+          "System.ServiceProcess",
+          "System.Transactions",
+          "WindowsBase",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Permissions.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.Security.Principal.Windows.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NUnit/3.13.2": {
+      "sha512": "u+fz/lXyR4vlamySNAEMrXvh+GhAQiB6/aVZtU5WjivR5zF26Ui0tfteDtWqT90k9D8y6g8rFKYQC97Z7d195w==",
+      "type": "package",
+      "path": "nunit/3.13.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGES.md",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "build/NUnit.props",
+        "icon.png",
+        "lib/net35/nunit.framework.dll",
+        "lib/net35/nunit.framework.xml",
+        "lib/net40/nunit.framework.dll",
+        "lib/net40/nunit.framework.xml",
+        "lib/net45/nunit.framework.dll",
+        "lib/net45/nunit.framework.xml",
+        "lib/netstandard2.0/nunit.framework.dll",
+        "lib/netstandard2.0/nunit.framework.xml",
+        "nunit.3.13.2.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
+    "NUnit.ConsoleRunner/3.12.0": {
+      "sha512": "ZUtI8leU9ozCjLy4ZZ2X6ClU0hxfQtb95VOdmMA4SxIUvf62rIPxoHXS+jghvo5QxgRihGGcEp8xT3vCfgDdsA==",
+      "type": "package",
+      "path": "nunit.consolerunner/3.12.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGES.txt",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "images/nunit_256.png",
+        "nunit.consolerunner.3.12.0.nupkg.sha512",
+        "nunit.consolerunner.nuspec",
+        "tools/agents/net20/nunit-agent-x86.exe",
+        "tools/agents/net20/nunit-agent-x86.exe.config",
+        "tools/agents/net20/nunit-agent.exe",
+        "tools/agents/net20/nunit-agent.exe.config",
+        "tools/agents/net20/nunit.agent.addins",
+        "tools/agents/net20/nunit.engine.api.dll",
+        "tools/agents/net20/nunit.engine.api.xml",
+        "tools/agents/net20/nunit.engine.core.dll",
+        "tools/agents/net20/testcentric.engine.metadata.dll",
+        "tools/agents/net40/nunit-agent-x86.exe",
+        "tools/agents/net40/nunit-agent-x86.exe.config",
+        "tools/agents/net40/nunit-agent.exe",
+        "tools/agents/net40/nunit-agent.exe.config",
+        "tools/agents/net40/nunit.agent.addins",
+        "tools/agents/net40/nunit.engine.api.dll",
+        "tools/agents/net40/nunit.engine.api.xml",
+        "tools/agents/net40/nunit.engine.core.dll",
+        "tools/agents/net40/testcentric.engine.metadata.dll",
+        "tools/nunit.console.nuget.addins",
+        "tools/nunit.engine.api.dll",
+        "tools/nunit.engine.api.xml",
+        "tools/nunit.engine.core.dll",
+        "tools/nunit.engine.dll",
+        "tools/nunit3-console.exe",
+        "tools/nunit3-console.exe.config",
+        "tools/testcentric.engine.metadata.dll"
+      ]
+    },
+    "NUnit3TestAdapter/4.0.0": {
+      "sha512": "5gCkytgQWL93M5s9Rnl4CfSUhn95VsuMVLYjmZe8K7dNRF7kzrBMPsBTyLNCga5qLW7RM/o591J+HVrV1QMaVQ==",
+      "type": "package",
+      "path": "nunit3testadapter/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net35/NUnit3.TestAdapter.dll",
+        "build/net35/NUnit3.TestAdapter.pdb",
+        "build/net35/NUnit3TestAdapter.props",
+        "build/net35/nunit.engine.api.dll",
+        "build/net35/nunit.engine.core.dll",
+        "build/net35/nunit.engine.dll",
+        "build/net35/testcentric.engine.metadata.dll",
+        "build/netcoreapp2.1/NUnit3.TestAdapter.dll",
+        "build/netcoreapp2.1/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp2.1/NUnit3TestAdapter.props",
+        "build/netcoreapp2.1/nunit.engine.api.dll",
+        "build/netcoreapp2.1/nunit.engine.core.dll",
+        "build/netcoreapp2.1/nunit.engine.dll",
+        "build/netcoreapp2.1/testcentric.engine.metadata.dll",
+        "nunit3testadapter.4.0.0.nupkg.sha512",
+        "nunit3testadapter.nuspec"
+      ]
+    },
+    "Selenium.Support/3.141.0": {
+      "sha512": "F4sxMCXGyqWtbw5qsniJRgza2UsBnslHwFgNA2p7hPxvJhqg73lyXu/ZscJ7FSfRvq3eJrosysv92+4sZ3vWsg==",
+      "type": "package",
+      "path": "selenium.support/3.141.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/WebDriver.Support.dll",
+        "lib/net35/WebDriver.Support.xml",
+        "lib/net40/WebDriver.Support.dll",
+        "lib/net40/WebDriver.Support.xml",
+        "lib/net45/WebDriver.Support.dll",
+        "lib/net45/WebDriver.Support.xml",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.3.141.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
+    "Selenium.WebDriver/3.141.0": {
+      "sha512": "wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
+      "type": "package",
+      "path": "selenium.webdriver/3.141.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/WebDriver.dll",
+        "lib/net35/WebDriver.xml",
+        "lib/net40/WebDriver.dll",
+        "lib/net40/WebDriver.xml",
+        "lib/net45/WebDriver.dll",
+        "lib/net45/WebDriver.xml",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.xml",
+        "selenium.webdriver.3.141.0.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.ChromeDriver/91.0.4472.10100": {
+      "sha512": "RalhItuJ6BZdD9HHVUHdpgDP/NQAUrr1yEAHWet+Ww33wbcuei0A2sF4+9duKaLQuZO3lcid7pKe2+km3sOGBQ==",
+      "type": "package",
+      "path": "selenium.webdriver.chromedriver/91.0.4472.10100",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/DefinePropertiesChromeDriver.targets",
+        "build/Selenium.WebDriver.ChromeDriver.targets",
+        "driver/linux64/chromedriver",
+        "driver/mac64/chromedriver",
+        "driver/win32/chromedriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.chromedriver.91.0.4472.10100.nupkg.sha512",
+        "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.GeckoDriver.Win64/0.29.1": {
+      "sha512": "61DbNvjg8GQf9/1O7mpZEg3ulyYQFZE63UhFqa7aoW3swwBteRPHfdGOWdWFs+bLPCtei+bLALMG3T6A2KIn+g==",
+      "type": "package",
+      "path": "selenium.webdriver.geckodriver.win64/0.29.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/DefinePropertiesGeckoDriver.Win64.targets",
+        "build/Selenium.WebDriver.GeckoDriver.Win64.targets",
+        "driver/geckodriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.geckodriver.win64.0.29.1.nupkg.sha512",
+        "selenium.webdriver.geckodriver.win64.nuspec"
+      ]
+    },
+    "System.Configuration.ConfigurationManager/5.0.0": {
+      "sha512": "aM7cbfEfVNlEEOj3DsZP+2g9NRwbkyiAv2isQEzw7pnkDg9ekCU2m1cdJLM02Uq691OaCS91tooaxcEn8d0q5w==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Configuration.ConfigurationManager.dll",
+        "lib/net461/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "ref/net461/System.Configuration.ConfigurationManager.dll",
+        "ref/net461/System.Configuration.ConfigurationManager.xml",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.AccessControl/5.0.0": {
+      "sha512": "dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
+      "type": "package",
+      "path": "system.security.accesscontrol/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.dll",
+        "lib/net461/System.Security.AccessControl.xml",
+        "lib/netstandard1.3/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.dll",
+        "lib/netstandard2.0/System.Security.AccessControl.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.dll",
+        "ref/net461/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/System.Security.AccessControl.dll",
+        "ref/netstandard1.3/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/de/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/es/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/fr/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/it/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ja/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ko/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/ru/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.AccessControl.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.AccessControl.xml",
+        "ref/netstandard2.0/System.Security.AccessControl.dll",
+        "ref/netstandard2.0/System.Security.AccessControl.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/win/lib/net46/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.dll",
+        "runtimes/win/lib/net461/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.AccessControl.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.accesscontrol.5.0.0.nupkg.sha512",
+        "system.security.accesscontrol.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Permissions/5.0.0": {
+      "sha512": "uE8juAhEkp7KDBCdjDIE3H9R1HJuEHqeqX8nLX9gmYKWwsqk3T5qZlPx8qle5DPKimC/Fy3AFTdV7HamgCh9qQ==",
+      "type": "package",
+      "path": "system.security.permissions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Security.Permissions.dll",
+        "lib/net461/System.Security.Permissions.xml",
+        "lib/net5.0/System.Security.Permissions.dll",
+        "lib/net5.0/System.Security.Permissions.xml",
+        "lib/netcoreapp3.0/System.Security.Permissions.dll",
+        "lib/netcoreapp3.0/System.Security.Permissions.xml",
+        "lib/netstandard2.0/System.Security.Permissions.dll",
+        "lib/netstandard2.0/System.Security.Permissions.xml",
+        "ref/net461/System.Security.Permissions.dll",
+        "ref/net461/System.Security.Permissions.xml",
+        "ref/net5.0/System.Security.Permissions.dll",
+        "ref/net5.0/System.Security.Permissions.xml",
+        "ref/netcoreapp3.0/System.Security.Permissions.dll",
+        "ref/netcoreapp3.0/System.Security.Permissions.xml",
+        "ref/netstandard2.0/System.Security.Permissions.dll",
+        "ref/netstandard2.0/System.Security.Permissions.xml",
+        "system.security.permissions.5.0.0.nupkg.sha512",
+        "system.security.permissions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Security.Principal.Windows/5.0.0": {
+      "sha512": "t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
+      "type": "package",
+      "path": "system.security.principal.windows/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.dll",
+        "lib/net461/System.Security.Principal.Windows.xml",
+        "lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.dll",
+        "lib/netstandard2.0/System.Security.Principal.Windows.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net46/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.dll",
+        "ref/net461/System.Security.Principal.Windows.xml",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.dll",
+        "ref/netcoreapp3.0/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/System.Security.Principal.Windows.dll",
+        "ref/netstandard1.3/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/de/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/es/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/fr/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/it/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ja/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ko/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/ru/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hans/System.Security.Principal.Windows.xml",
+        "ref/netstandard1.3/zh-hant/System.Security.Principal.Windows.xml",
+        "ref/netstandard2.0/System.Security.Principal.Windows.dll",
+        "ref/netstandard2.0/System.Security.Principal.Windows.xml",
+        "ref/uap10.0.16299/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/net46/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/net461/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.xml",
+        "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll",
+        "runtimes/win/lib/uap10.0.16299/_._",
+        "system.security.principal.windows.5.0.0.nupkg.sha512",
+        "system.security.principal.windows.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "NUnit >= 3.13.2",
+      "NUnit.ConsoleRunner >= 3.12.0",
+      "NUnit3TestAdapter >= 4.0.0",
+      "Selenium.Support >= 3.141.0",
+      "Selenium.WebDriver >= 3.141.0",
+      "Selenium.WebDriver.ChromeDriver >= 91.0.4472.10100",
+      "Selenium.WebDriver.GeckoDriver.Win64 >= 0.29.1",
+      "System.Configuration.ConfigurationManager >= 5.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Tatsiana_Barabanava\\source\\repos\\SeleniumWebDriver_Actions-JSExecutors_GRID\\SeleniumWD_GRID\\SeleniumWebDriver.csproj",
+      "projectName": "SeleniumWebDriver",
+      "projectPath": "C:\\Users\\Tatsiana_Barabanava\\source\\repos\\SeleniumWebDriver_Actions-JSExecutors_GRID\\SeleniumWD_GRID\\SeleniumWebDriver.csproj",
+      "packagesPath": "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tatsiana_Barabanava\\source\\repos\\SeleniumWebDriver_Actions-JSExecutors_GRID\\SeleniumWD_GRID\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Tatsiana_Barabanava\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "targetAlias": "net48",
+        "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "[3.13.2, )"
+          },
+          "NUnit.ConsoleRunner": {
+            "target": "Package",
+            "version": "[3.12.0, )"
+          },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "[4.0.0, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[3.141.0, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[3.141.0, )"
+          },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[91.0.4472.10100, )"
+          },
+          "Selenium.WebDriver.GeckoDriver.Win64": {
+            "target": "Package",
+            "version": "[0.29.1, )"
+          },
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "LeLYYtmfT6BhHJbK/EwDPxlAp8o2QgY/R5q2AoVSLDKQGmzGm+JpEv8Fm4r2jr0BWbmpspFWFd+2lEGuO9S4VA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tatsiana_Barabanava\\source\\repos\\SeleniumWebDriver_Actions-JSExecutors_GRID\\SeleniumWD_GRID\\SeleniumWebDriver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\nunit\\3.13.2\\nunit.3.13.2.nupkg.sha512",
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\nunit.consolerunner\\3.12.0\\nunit.consolerunner.3.12.0.nupkg.sha512",
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\nunit3testadapter\\4.0.0\\nunit3testadapter.4.0.0.nupkg.sha512",
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\selenium.webdriver.chromedriver\\91.0.4472.10100\\selenium.webdriver.chromedriver.91.0.4472.10100.nupkg.sha512",
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\selenium.webdriver.geckodriver.win64\\0.29.1\\selenium.webdriver.geckodriver.win64.0.29.1.nupkg.sha512",
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Tatsiana_Barabanava\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
